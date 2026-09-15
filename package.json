@@ -1,6 +1,6 @@
 {
   "name": "@asynx6/agentburn",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Where did my AI money go? Reads Claude Code session transcripts and shows token burn per project, session, model — with cache-hit ratios that explain the bill.",
   "type": "module",
   "bin": {

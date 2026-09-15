@@ -22,12 +22,16 @@ const flagVal = (n, d) => {
 const has = (n) => argv.includes(n);
 
 if (has('--help') || has('-h')) {
-  console.log(`agentburn — token & cost breakdown for Claude Code sessions
+  console.log(`agentburn v${process.env.npm_package_version || '0.1.1'} — where did my Claude Code money go?
 
 usage: agentburn [--models] [--days] [--sessions] [--project NAME]
                  [--since YYYY-MM-DD] [--dir PATH] [--json]
 
-reads ~/.claude/projects/**/*.jsonl locally. lists prices, no network.`);
+reads ~/.claude/projects/**/*.jsonl locally. list prices, no network.`);
+  process.exit(0);
+}
+if (has('--version') || has('-v')) {
+  console.log(process.env.npm_package_version || '0.1.1');
   process.exit(0);
 }
 
