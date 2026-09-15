@@ -1,18 +1,46 @@
 {
-  "name": "agentburn",
+  "name": "@asynx6/agentburn",
   "version": "0.1.0",
   "description": "Where did my AI money go? Reads Claude Code session transcripts and shows token burn per project, session, model — with cache-hit ratios that explain the bill.",
   "type": "module",
-  "bin": { "agentburn": "agentburn.js" },
+  "bin": {
+    "agentburn": "agentburn.js"
+  },
   "main": "lib/pricing.js",
   "exports": {
     ".": "./lib/pricing.js",
     "./scan": "./lib/scan.js"
   },
-  "engines": { "node": ">=18" },
-  "scripts": { "test": "node test.js" },
-  "files": ["lib/", "agentburn.js", "README.md", "LICENSE", "CHANGELOG.md"],
-  "keywords": ["claude-code", "llm", "tokens", "cost", "usage", "cli", "zero-dependency", "anthropic", "developer-tools"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "lib/",
+    "agentburn.js",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "claude-code",
+    "llm",
+    "tokens",
+    "cost",
+    "usage",
+    "cli",
+    "zero-dependency",
+    "anthropic",
+    "developer-tools"
+  ],
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/asynx6/agentburn.git" }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asynx6/agentburn.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

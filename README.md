@@ -6,7 +6,7 @@ list rates, and breaks your burn down by project, model, day, and session —
 plus a cache-hit ratio that usually explains the biggest number on the page.
 
 ```
-$ npx agentburn
+$ agentburn
 
   agentburn — ~/.claude/projects
   4 sessions · 122 model turns · $40.53 at list price
@@ -38,14 +38,15 @@ never see explained anywhere else. agentburn surfaces it per project:
 ## Usage
 
 ```bash
-npx agentburn                    # totals + top projects
-npx agentburn --models           # which model ate the budget
-npx agentburn --days             # per-day table (find your bad Tuesday)
-npx agentburn --sessions         # top individual sessions
-npx agentburn --project tokenzip # one project, all details
-npx agentburn --since 2026-09-01 # cutoff
-npx agentburn --dir ./transcripts   # custom path (CI, other machines)
-npx agentburn --json             # machine-readable, pipe to anything
+npx @asynx6/agentburn   # or npm i -g @asynx6/agentburn
+agentburn                    # totals + top projects
+agentburn --models           # which model ate the budget
+agentburn --days             # per-day table (find your bad Tuesday)
+agentburn --sessions         # top individual sessions
+agentburn --project tokenzip # one project, all details
+agentburn --since 2026-09-01 # cutoff
+agentburn --dir ./transcripts   # custom path (CI, other machines)
+agentburn --json             # machine-readable, pipe to anything
 ```
 
 Zero dependencies, Node ≥ 18, single file, auditable. **Reads local JSONL
